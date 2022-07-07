@@ -25,7 +25,7 @@
                 <a class="logo" href="./index.html" lang="en"> <span class="accent">Web</span>Studio</a>
                 <ul class="menu-nav">
                     <li class="item">
-                        <a class="active-page" class="link" href="./index.html">Студия</a>
+                        <a class="menu-link current-page" class="link" href="./index.html">Студия</a>
                     </li>
                     <li class="item">
                         <a class="menu-link" class="link" href="./portfolio.html">Портфолио</a>
@@ -123,13 +123,22 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list">
                     <li class="list-item">
-                        <img class="thumb" src="./images/box1.jpg" alt="Написание кода" width="370">
+                        <div class="thumb">
+                            <img class="tasks-image" src="./images/box1.jpg" alt="Написание кода" width="370">
+                            <p class="overlay">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="list-item">
-                        <img class="thumb" src="./images/box2.jpg" alt="Верстка" width="370">
+                        <div class="thumb">
+                            <img class="tasks-image" src="./images/box2.jpg" alt="Верстка" width="370">
+                            <p class="overlay">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="list-item">
-                        <img class="thumb" src="./images/box3.jpg" alt="Дизайн" width="370">
+                        <div class="thumb">
+                            <img class="tasks-image" src="./images/box3.jpg" alt="Дизайн" width="370">
+                               <p class="overlay">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -418,7 +427,17 @@
             </div>
         </div>
     </footer>
-        
+    <button data-modal-open>Заказать услугу</button>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Sit natus quia tempore saepe, ea vel minus libero est quidem vitae?
+            </p>
+    <button data-modal-close>Закрыть</button>        
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>       
 </body>
 
 </html>
