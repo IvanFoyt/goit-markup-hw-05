@@ -274,7 +274,7 @@ button {
   margin-right: auto;
 }
 
-.hero .button {
+.button-basic {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -288,10 +288,12 @@ button {
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.button-basic:focus,
+.button-basic:hover {
   color: var(--accent-color);
   background-color: #FFFFFF;
 }
@@ -824,9 +826,3 @@ background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
 
-.button-close-icon {
-  height: 18px;
-  width: 18px;
-
-  display: block;
-}
