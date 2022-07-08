@@ -767,10 +767,6 @@ footer .logo {
 
 /* Modal */
 
-
-
-
-
 .backdrop{
   position: fixed;
   top:0;
@@ -799,6 +795,7 @@ background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top:50%;
   left: 50%;
+  
 
   width: 528px;
   height: 581px;
@@ -813,22 +810,24 @@ background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button-close {
-  display: flex;
-  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid transparent;
   width: 30px;
   height: 30px;
-  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
 }
 
 .button-close-icon {
   height: 18px;
   width: 18px;
-
-  display: block;
+ 
+  display: flex;
 }
