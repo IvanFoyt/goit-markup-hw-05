@@ -766,13 +766,67 @@ footer .logo {
 /* Modal */
 
 
+
+
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left:0;
+
+  height: 100%;
+  width: 100%;
+
+background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -150%) scale(0);
+}
+
+
 .modal{
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
-  transform: translateX(-50%,-50%);
+
   width: 528px;
-  min-height: 581px;
-  background-color: #ffffff;
-  border-radius: 4px;
+  height: 581px;
+
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+
+  background-color: #fff;
+}
+
+.button-close {
+  display: flex;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+
+  background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.button-close-icon {
+  height: 18px;
+  width: 18px;
+
+  display: block;
 }
