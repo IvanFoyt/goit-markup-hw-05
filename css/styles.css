@@ -208,12 +208,14 @@ button {
   height: 12px;
   width: 16px;
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-phone{
   margin-right: 10px;
   height: 16px;
   width: 10px;
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover .link-envelope,
@@ -221,6 +223,7 @@ button {
 .menu-link:focus .link-envelope,
 .menu-link:focus .link-phone {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-nav .menu-link:hover,
@@ -228,6 +231,7 @@ button {
 .menu-nav .menu-link:focus,
 .auth-nav .menu-link:focus {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -470,6 +474,7 @@ button {
   align-items: center;
   justify-content: center;
   
+  
 }
 .social-list-item{
   height: 44px;
@@ -486,15 +491,19 @@ button {
   background-color: transparent;
   border-radius: 100%;
   padding: 12px 12px;
+  
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
   --color4:var(--main-background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-icon{
   height: 20px;
   width: 20px;
@@ -523,20 +532,27 @@ button {
   justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  
 }
 .clients-link:hover,
 .clients-link:focus{
   border: 1px solid var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
   fill:var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
 
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 .clients-icon {
@@ -593,6 +609,7 @@ footer .logo {
 .address .transparent-address:hover,
 .address .transparent-address:focus {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .strong {
@@ -615,6 +632,7 @@ footer .logo {
 .footer .social-link{
   background-color: rgba(255, 255, 255, 0.1);
   
+  
 }
 
 .footer .social-icon {
@@ -624,6 +642,8 @@ footer .logo {
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 
@@ -775,6 +795,7 @@ footer .logo {
   height: 100%;
   width: 100%;
 
+  
 background-color: rgba(0, 0, 0, 0.2);
 
 
