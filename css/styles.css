@@ -146,7 +146,7 @@ button {
    padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  
     --color1:currentColor;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -480,12 +480,17 @@ button {
 }
 .social-link {
   
-  display: block;
-  height: 44px;
+  display: flex;
   width: 44px;
-  background-color: transparent;
-  border-radius: 100%;
-  padding: 12px 12px;
+  height: 44px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .social-link:hover,
 .social-link:focus {
@@ -508,6 +513,7 @@ button {
 }
 .clients-list{
   display: flex;
+  
 }
 .clients-item{
   height: 92px;
@@ -520,9 +526,13 @@ button {
   height: 100%;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  
 }
 .clients-link:hover,
 .clients-link:focus{
@@ -531,19 +541,19 @@ button {
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
   fill:var(--accent-color);
+  
 }
 
-.clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
 
 .clients-icon {
   height: 60px;
   width: 106px;
   align-self: center;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 
@@ -560,6 +570,7 @@ footer {
 .footer .container{
   display: flex;
   align-items: baseline;
+  
 }
 
 .footer-left {
@@ -593,7 +604,16 @@ footer .logo {
 .address .transparent-address:hover,
 .address .transparent-address:focus {
   color: var(--accent-color);
+  
+  
 }
+
+.white-address,
+.transparent-address{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+
 
 .strong {
   margin-bottom: 20px;
@@ -665,7 +685,7 @@ footer .logo {
   font-size: 18px;
   vertical-align: top;
   line-height: 1.56;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 .works-list .item:hover .overflow{
@@ -776,13 +796,19 @@ footer .logo {
   width: 100%;
 
 background-color: rgba(0, 0, 0, 0.2);
-
-
+opacity: 1;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+
 .is-hidden{
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .backdrop.is-hidden .modal {
@@ -814,7 +840,7 @@ background-color: rgba(0, 0, 0, 0.2);
   top: 8px;
   right: 8px;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
   width: 30px;
   height: 30px;
   background-color: transparent;
