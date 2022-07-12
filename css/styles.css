@@ -496,6 +496,7 @@ button {
 .social-link:focus {
   background-color: var(--accent-color);
 }
+
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
   --color4:var(--main-background-color);
